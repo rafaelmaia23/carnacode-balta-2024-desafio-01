@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/app.css">
-    <title>IMC</title>
+    <title>CarnaCode-IMC-App</title>
 </head>
 
 <body>
-    <div>ITEM 1</div>
-    <div class="flex flex-column">
-        <div>ITEM 2.1</div>
-        <div>ITEM 2.2</div>
-        <div>ITEM 2.3</div>
+    <div class="container flex flex-column flex-center">
+        <h1 class="title">Cálculo de IMC</h1>
+        <form action="" class="flex flex-column form">
+            <input type="text" id="Altura" placeholder="Altura" class="form-inputText">
+            <input type="text" id="Peso" placeholder="Peso" class="form-inputText">
+            <input type="text" id="Sexo" placeholder="Sexo" class="form-inputText">
+            <div>
+                <input type="checkbox" id="Idoso" class="form-inputCheckbox">
+                <label for="Idoso" class="form-label">Eu tenho 65 anos ou mais</label>
+            </div>
+            <input type="submit" value="Calcular meu IMC" class="btn">
+            <a href="#" class="btn-outline">Entenda o cálculo</a>
+        </form>
     </div>
-    <div>
-        <input class="input" type="text" />
-    </div>
-    <div>ITEM 4</div>
-    <div>ITEM 5</div>
-    <div>ITEM 6</div>
 </body>
 
 </html>
